@@ -39,6 +39,7 @@ const AccordionList = () => {
       <StyledTitle>Montserrat </StyledTitle>
       {generateRange(7).map((index) => (
         <AccordionItem
+          key={index}
           active={index === activeIndex}
           onClick={() => onClickHandler(index)}
         />
