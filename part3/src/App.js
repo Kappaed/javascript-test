@@ -2,10 +2,11 @@ import "./App.css";
 import styled from "styled-components";
 import Header from "./components/header/Header";
 import bgImage from "./images/home1-bg.jpg";
+import AccordionList from "./components/accordion-list/Accordion-list";
 
 const AccordionWrapper = styled.div`
   display: flex;
-  position: relative;
+  height: 100vh;
 `;
 
 const ImgWrapper = styled.img`
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <AccordionWrapper>
         <Header />
+        <AccordionList />
         <ImgWrapper src={bgImage} />
       </AccordionWrapper>
     </div>

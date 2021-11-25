@@ -12,7 +12,7 @@ const Wrapper = styled.div`
     rgba(0, 0, 0, 0.300313) 84.97%,
     rgba(0, 0, 0, 0) 91.05%
   );
-  width: 550px;
+  width: 500px;
   height: 100vh;
   padding: 85px 75px 85px 68px;
   color: white;
@@ -27,7 +27,7 @@ const StyledTitle = styled.h1`
 `;
 
 const TextWrapper = styled.div`
-  max-width: 360px;
+  max-width: 330px;
 `;
 const Header = () => {
   return (
