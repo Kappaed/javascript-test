@@ -1,28 +1,28 @@
 import styled from "styled-components";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-const AccordionBar = styled.div`
-  padding: 15px 0 15px 30px;
+const AccordionBar = styled.button`
+  padding: 15px 30px;
   color: black;
+  font-family: var(--alternative-font-family);
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--primary-color);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  max-height: 45px;
+  max-height: 50px;
   font-weight: var(--larger-font-weight);
+  width: 100%;
 `;
 
-const StyledButton = styled.button`
-  background: transparent;
-  max-height: 100%;
-  padding: 3px 30px;
+const StyledArrow = styled.div`
   display: flex;
   font-size: 1.5rem;
 `;
 
 const Wrapper = styled.li`
   margin-bottom: 20px;
+
   flex-shrink: 0 1 0;
   overflow: auto;
 `;
@@ -36,12 +36,12 @@ const AccordionTextArea = styled.div`
 const AccordionItem = (props) => {
   return (
     <Wrapper>
-      <AccordionBar>
+      <AccordionBar onClick={props.onClick}>
         <p>{props.title || "Lorem Ipsum"}</p>
-        <StyledButton onClick={props.onClick}>
+        <StyledArrow>
           {props.active && <FiChevronUp />}
           {!props.active && <FiChevronDown />}
-        </StyledButton>
+        </StyledArrow>
       </AccordionBar>
       {props.active && (
         <AccordionTextArea>

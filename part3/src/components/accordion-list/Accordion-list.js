@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 const StyledTitle = styled.h3`
   font-family: var(--alternative-font-family);
   font-size: var(--primary-font-size);
-  font-weight: 700;
+  font-weight: var(--primary-font-weight);
   margin-bottom: 10px;
   text-align: center;
   overflow: hidden;

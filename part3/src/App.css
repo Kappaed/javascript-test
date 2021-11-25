@@ -17,6 +17,7 @@ body {
   --larger-font-size: 35px;
   --largest-line-height: 55px;
   --primary-color: #55c6d7;
+  --alt-color: rgb(224, 224, 224);
   --alternate-font-family: "Nunito", san-serif;
 }
 *,
